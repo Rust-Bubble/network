@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,26 @@
            max-width: 700px;
            margin: 30px auto;
            padding: 15 px auto;">
-        <p>hhhhh</p>
-        <p>hhhhh</p>
-        <p>hhhhh</p>
-        <p>hhhhh</p>
+        <p>随便写点什么罢</p>
+        <p>算了没什么好写的</p>
+        <p>这是一个个人网页</p>
+        <p>不用于任何商业用途</p>
     </div>
+        <button onclick="playVid()" type="button">continue</button>
+    <button onclick="pauseVid()" type="button">stop</button> 
+    <audio src="http://cdn5.lizhi.fm/audio/2016/02/19/2518258331020197894_hd.mp3" id="music1"autoplay="autoplay" loop="loop"></audio> 
+        <script> 
+        var mymusic=document.getElementById("music1"); 
+        
+        function playVid()
+        { 
+            mymusic.play(); 
+        } 
+        function pauseVid()
+        { 
+          mymusic.pause(); 
+        } 
+        </script> 
     <div 
         style="
         background-color: rgb(235, 215, 215);
